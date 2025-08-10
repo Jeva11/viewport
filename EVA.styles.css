@@ -42,14 +42,14 @@ button, input, select textarea { font: inherit; }
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 @media (prefers-color-scheme: dark) {
     body { background-color: var(--dark-gray); }
-}
+
 
 /* - - it looked bad with the dark text - - */
 
-header, footer, main, section, p, h1, h2, h3, h4, small {
+section {
     color: var(--white);
-  }
-
+}
+}
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
 
