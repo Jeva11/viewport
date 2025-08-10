@@ -41,41 +41,15 @@ button, input, select, textarea { font: inherit; }
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 @media (prefers-color-scheme: dark) {
-    /* page background */
-    html, body {
-      background-color: #121212; /* or var(--dark-gray) */
-      color: var(--white);
-    }
-  
-    
-    #application,
-    .ic-Layout-wrapper,
-    .ic-Layout-contentWrapper,
-    .ic-Layout-contentMain,
-    #content {
-      background-color: transparent; 
-      color: var(--white);
-    }
-  
-   
-    main, header, footer {
-      color: var(--white);
-    }
-  
-   
-    .description.user_content,
-    .description.user_content p,
-    .description.user_content li,
-    .description.user_content small {
-      color: var(--white);
-    }
-    .description.user_content a,
-    .description.user_content a:link,
-    .description.user_content a:visited {
-      color: var(--white);
-      text-decoration: underline;
-    }
-  }
+    body { background-color: var(--dark-gray); }
+
+
+/* - - it looked bad with the dark text - - */
+
+section {
+    color: var(--white);
+}
+}
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
 
