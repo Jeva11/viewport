@@ -41,6 +41,27 @@ button, input, select, textarea { font: inherit; }
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 @media (prefers-color-scheme: dark) {
+    /* page background */
+    html, body {
+      background-color: #121212; /* or var(--dark-gray) */
+      color: var(--white);
+    }
+  
+    
+    #application,
+    .ic-Layout-wrapper,
+    .ic-Layout-contentWrapper,
+    .ic-Layout-contentMain,
+    #content {
+      background-color: transparent; 
+      color: var(--white);
+    }
+  
+   
+    main, header, footer {
+      color: var(--white);
+    }
+  
    
     .description.user_content,
     .description.user_content p,
@@ -48,20 +69,13 @@ button, input, select, textarea { font: inherit; }
     .description.user_content small {
       color: var(--white);
     }
-
-    body, main, header, footer, section, p, li, small, h1, h2, h3, h4 {
-        color: var(--white);
-      }
-  
-    /* links inside that block (hit all states) */
     .description.user_content a,
     .description.user_content a:link,
     .description.user_content a:visited {
       color: var(--white);
-      text-decoration: underline; 
+      text-decoration: underline;
     }
   }
-  
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
 
