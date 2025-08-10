@@ -41,15 +41,23 @@ button, input, select textarea { font: inherit; }
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 @media (prefers-color-scheme: dark) {
-    body { background-color: var(--dark-gray); }
-
-
-/* - - it looked bad with the dark text - - */
-
-section {
-    color: var(--white);
-}
-}
+   
+    .description.user_content,
+    .description.user_content p,
+    .description.user_content li,
+    .description.user_content small {
+      color: var(--white);
+    }
+  
+    /* links inside that block (hit all states) */
+    .description.user_content a,
+    .description.user_content a:link,
+    .description.user_content a:visited {
+      color: var(--white);
+      text-decoration: underline; 
+    }
+  }
+  
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
 
