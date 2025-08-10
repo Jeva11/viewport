@@ -42,7 +42,25 @@ button, input, select, textarea { font: inherit; }
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 @media (prefers-color-scheme: dark) {
     body { background-color: var(--dark-gray); }
+
+    .description.user_content { color: var(--dark-gray); }
   }
+
+  @media (prefers-color-scheme: dark) {
+    html, body {
+      background-color: var(--dark-gray);
+      color: var(--white);
+    }
+
+    main, header, footer, section, p, li, small, h1, h2, h3, h4 {
+        color: var(--white);
+      }
+
+      a, a:link, a:visited {
+        color: var(--white);
+        text-decoration: underline;
+      }
+    }
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
 
@@ -193,7 +211,7 @@ img{
     img{
         width: 200px;
         max-width: 200px;
-    } */
+    } 
     }
 /* --------------- END SMALL SCREEN SIZES --------------- */
 
@@ -227,7 +245,7 @@ img{
     #seven{
         grid-column: 3/4;
         grid-row: 3/5;
-    } */
+    } 
     }
 /* --------------- END MEDIUM SCREEN SIZES --------------- */
 
